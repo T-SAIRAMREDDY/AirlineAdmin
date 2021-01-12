@@ -21,8 +21,10 @@ import { UpdateScheduleComponent } from './update-schedule/update-schedule.compo
 import { DeleteFlightsComponent } from './delete-flights/delete-flights.component';
 import { DeleteScheduleComponent } from './delete-schedule/delete-schedule.component';
 import { AdminHeaderComponent } from './admin-header/admin-header.component';
+import { HeaderLinksComponent } from './header-links/header-links.component';
 
 export const routes:Routes=[
+  { path: '', redirectTo: 'AdminLogin', pathMatch: 'full' },
   {path:"AdminLogin",component: AdminloginComponent},
   {path:"Flights",component: FlightsComponent},
   {path:"Schedules",component: SchedulesComponent},
@@ -50,7 +52,8 @@ export const routes:Routes=[
     UpdateScheduleComponent,
     DeleteFlightsComponent,
     DeleteScheduleComponent,
-    AdminHeaderComponent
+    AdminHeaderComponent,
+    HeaderLinksComponent
   ],
   imports: [
     BrowserModule,

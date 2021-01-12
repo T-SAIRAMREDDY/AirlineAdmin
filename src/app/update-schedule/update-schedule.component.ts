@@ -29,7 +29,7 @@ export class UpdateScheduleComponent implements OnInit {
      this.scheduleService.updateScheduleFromApi(this.schedule.Schedule_ID,this.schedule).subscribe(msg=>
       console.log("called"));
       alert('Updated Schedule Status');
-      this.router.navigate(["/Schedules"]);
+      this.router.navigate(["Schedules"]);
    }
   
   ngOnInit(): void {

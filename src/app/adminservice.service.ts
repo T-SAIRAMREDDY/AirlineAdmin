@@ -10,7 +10,6 @@ export class AdminserviceService {
 
   constructor(private http : HttpClient) { 
     this.Url="http://localhost:59565/api/AdminLogin";
-    
   }
 
   Login(username: string, password :string){

@@ -31,7 +31,7 @@ export class DeleteFlightsComponent implements OnInit {
     this.flightService.deleteFlightFromApi(this.flight.Flight_ID).subscribe(msg=>
      console.log("called"));
      alert('Successfully updates status to deleted');
-     this.router.navigate(["/Flights"]);
+     this.router.navigate(["Flights"]);
   }
   ngOnInit(): void {
   }

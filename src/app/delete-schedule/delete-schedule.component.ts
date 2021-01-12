@@ -35,7 +35,7 @@ export class DeleteScheduleComponent implements OnInit {
       this.scheduleService.deleteScheduleFromApi(this.schedule.Schedule_ID).subscribe(msg =>
         console.log("called"));
       alert('Updated Schedule Status');
-      this.router.navigate(["/Schedules"]);
+      this.router.navigate(["Schedules"]);
     }
   }
 

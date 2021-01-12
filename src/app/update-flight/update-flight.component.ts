@@ -32,7 +32,7 @@ export class UpdateFlightComponent implements OnInit {
      this.flightService.updateFlightFromApi(this.flight.Flight_ID,this.flight).subscribe(msg=>
       console.log("called"));
       alert('Updated Flight Status');
-      this.router.navigate(["/Flights"]);
+      this.router.navigate(["Flights"]);
    }
 
   ngOnInit(): void {

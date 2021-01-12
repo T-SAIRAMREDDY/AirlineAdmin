@@ -19,7 +19,7 @@ export class AddScheduleComponent implements OnInit {
      this.scheduleService.addScheduleFromApi(this.schedule)
      .subscribe(data=>console.log(data));
      alert('Added new schedule');
-    this.router.navigate(["/Schedules"]);
+    this.router.navigate(["Schedules"]);
    }
   ngOnInit(): void {
   }

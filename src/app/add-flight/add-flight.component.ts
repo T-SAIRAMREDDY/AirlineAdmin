@@ -17,7 +17,8 @@ export class AddFlightComponent implements OnInit {
   InsertFlight(){
     this.flightService.addFlightFromApi(this.flight).subscribe(data=>console.log(data));
     alert('Added new Flight');
-    this.router.navigate(["/Flights"]);
+    
+    this.router.navigate(["Flights"]);
   }
   ngOnInit(): void {
   }
